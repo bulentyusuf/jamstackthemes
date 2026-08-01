@@ -1,6 +1,6 @@
 ---
 title: "Be Useful | Next.js and Contentful Blog"
-github: https://github.com/bulentyusuf/nextjs-blog-draft-mode
+github: https://github.com/bulentyusuf/building-blocks
 demo: https://nextblog.net/
 author: Bulent Yusuf
 date: 2026-07-27
@@ -24,12 +24,12 @@ description: >-
 An extension of Vercel's Next.js Blog with Draft Mode starter, developed into a
 complete personal publishing setup and shared under the same MIT licence.
 
-The content model is deliberately compact. A Post type backed by Author and
-Category, plus a Code Block for embedded snippets, a Prompt Block for publishing
-the generative-image prompt behind a cover, a Sidenote for asides set in the
-margin, and a Page type for standalone pages. A Contentful export and a seed
-script ship with the repo, so a fresh fork has content to render from the first
-build.
+The content model is deliberately compact. A Post type backed by Author,
+Category and Tag, plus a Code Block for embedded snippets, a Prompt Block for
+publishing the generative-image prompt behind a cover, a Sidenote for asides set
+in the margin, a Page type for standalone pages, and a Browse Intro holding the
+editable standfirst on each browse page. A Contentful export and a seed script
+ship with the repo, so a fresh fork has content to render from the first build.
 
 ## Features
 
@@ -40,8 +40,9 @@ build.
 * Sidenotes that float into the right margin on wide screens and collapse behind their reference number on narrow ones, opening without JavaScript
 * Per-post table of contents, reading time, image lightbox, and cross-page view transitions on cover images
 * Light and dark colour schemes following the operating system preference
+* Tag landing pages and a glossary indexing every topic with its posts grouped beneath it, plus tag pills on posts and on every listing card
 * Archive grouped by year, paginated home, category and author listings, and landing pages for each
 * Sitemap, robots.txt, RSS feed, Open Graph and Twitter card metadata, and breadcrumb structured data
 * Skip link, a single visible focus indicator across the site, and reduced-motion support
 * Content Security Policy, HSTS, and Permissions-Policy headers set in `next.config.js`
-* TypeScript throughout, with a vitest suite and a full build gating every pull request
+* TypeScript throughout, with a vitest suite — including automated accessibility checks over the rendered markup — and a full build gating every pull request
